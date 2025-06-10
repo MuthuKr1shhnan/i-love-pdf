@@ -1,4 +1,0 @@
-/components
-# Purpose: Contains reusable UI components used throughout the app.
-# Example: Buttons, modals, input fields, and navigation bars.
-

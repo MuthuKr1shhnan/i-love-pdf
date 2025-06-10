@@ -1,4 +1,0 @@
-/styles/stylesOfComponents
-# Purpose: Stores component-specific styles.
-# Example: `Button.css`, `Navbar.css`, `Card.css`.
-

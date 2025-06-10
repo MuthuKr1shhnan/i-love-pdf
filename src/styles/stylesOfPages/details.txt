@@ -1,0 +1,4 @@
+/styles/stylesOfPages
+# Purpose: Stores page-specific styles.
+# Example: `Home.css`, `Dashboard.css`, `Profile.css`.
+

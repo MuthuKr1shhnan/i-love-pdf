@@ -1,0 +1,4 @@
+/pages
+# Purpose: Contains components corresponding to specific routes.
+# Example: HomePage, AboutPage, ContactPage components.
+

@@ -1,5 +1,3 @@
-// src/pages/Home.jsx
-
 import React from "react";
 
 const Home = () => {
@@ -32,7 +30,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-pink-50 p-6">
+    <div className="min-h-screen bg-pink-50 p-6 pb-24">
       <h1 className="text-4xl font-bold text-center text-pink-600 mb-10">
         Flower Shop
       </h1>
@@ -64,3 +62,4 @@ const Home = () => {
 };
 
 export default Home;
+

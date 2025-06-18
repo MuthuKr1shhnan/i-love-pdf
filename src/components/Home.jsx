@@ -1,6 +1,4 @@
 import React from "react";
-import ToolsCard from "../components/ToolsCard";
-import { cardData } from "../utils/cardData";
 
 const Home = () => {
   const flowers = [
@@ -32,28 +30,27 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-pink-50 p-6 pb-24">
-     <ToolsCard tools={cardData}/>
-      <h1 className="text-4xl font-bold text-center text-pink-600 mb-10">
+    <div className='min-h-screen bg-pink-50 p-6 pb-24'>
+      <h1 className='text-4xl font-bold text-center text-pink-600 mb-10'>
         Flower Shop
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
         {flowers.map((flower, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105 hover:shadow-lg"
+            className='bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105 hover:shadow-lg'
           >
             <img
               src={flower.image}
               alt={flower.name}
-              className="w-full h-48 object-cover"
+              className='w-full h-48 object-cover'
             />
-            <div className="p-4">
-              <h2 className="text-xl font-semibold text-gray-800">
+            <div className='p-4'>
+              <h2 className='text-xl font-semibold text-gray-800'>
                 {flower.name}
               </h2>
-              <p className="text-gray-600 mt-1">₹{flower.price}</p>
-              <button className="mt-4 px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition">
+              <p className='text-gray-600 mt-1'>₹{flower.price}</p>
+              <button className='mt-4 px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition'>
                 Buy Now
               </button>
             </div>
@@ -65,4 +62,3 @@ const Home = () => {
 };
 
 export default Home;
-

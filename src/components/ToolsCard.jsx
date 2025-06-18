@@ -22,19 +22,12 @@ const ToolsCard = ({
     <div className={` ${mainContainerClasses}`}>
       <div className={` ${containerClasses}`}>
         {tools.map((tool) => (
-          <div
-            className={`tools__item relative ${itemClasses}`}
-            key={tool.title}
-          >
-            {tool.new && (
-              <div className={`badge badge--new ${badgeClasses}`}>New!</div>
-            )}
+          <div className={` ${itemClasses}`} key={tool.title}>
+            {tool.new && <div className={`${badgeClasses}`}>New!</div>}
             <Link to={tool.link} title={tool.title} className='block'>
-              <div className={`tools__item__icon ${iconClasses}`}>
-                {tool.icon}
-              </div>
+              <div className={`${iconClasses}`}>{tool.icon}</div>
               <h3 className={`${titleClasses}`}>{tool.title}</h3>
-              <div className={`tools__item__content ${contentClasses}`}>
+              <div className={` ${contentClasses}`}>
                 <p>{tool.description}</p>
               </div>
             </Link>

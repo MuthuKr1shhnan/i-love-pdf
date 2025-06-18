@@ -1,4 +1,6 @@
 import React from "react";
+import ToolsCard from "../components/ToolsCard";
+import { cardData } from "../utils/cardData";
 
 const Home = () => {
   const flowers = [
@@ -31,6 +33,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-pink-50 p-6 pb-24">
+     <ToolsCard tools={cardData}/>
       <h1 className="text-4xl font-bold text-center text-pink-600 mb-10">
         Flower Shop
       </h1>

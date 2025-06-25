@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
           <div className='mt-8 border-t-[.25px] border-gray-200 pt-4 text-center text-sm text-gray-400'>
             <p className='text-sm text-center'>
-              Copyright 2024@ greatstack.dev - All Right Reserved.
+              Copyright 2025@ Frontend Team - All Right Reserved.
             </p>
           </div>
         </div>

@@ -1,7 +1,10 @@
+import ToolsCard from "./ToolsCard";
+
 export default function Footer() {
   return (
     <>
       <div className='text-center mt-16'>
+      
         <p className='text-2xl font-medium text-gray-800'>
           Subscribe now &amp; get 20% off
         </p>

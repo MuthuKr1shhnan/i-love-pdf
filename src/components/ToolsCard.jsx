@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
-import { tools } from "../utils/cardData";
 const ToolsCard = ({
+  tools = [],
+  onToggleFavorite,
   containerClasses = "flex flex-col md:flex-row",
   mainContainerClasses = "flex flex-col md:flex-row",
   itemClasses = "p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow",
@@ -11,20 +12,36 @@ const ToolsCard = ({
   badgeClasses = "absolute top-0 right-0 bg-green-500 text-white text-xs px-2 py-1 rounded",
 }) => {
   return (
-    <div className={` ${mainContainerClasses}`}>
-      <div className={` ${containerClasses}`}>
+    <div className={mainContainerClasses}>
+      <div className={containerClasses}>
         {tools.map((tool) => (
-          <div className={` ${itemClasses}`} key={tool.title}>
-            {tool.new && <div className={`${badgeClasses}`}>New!</div>}
-            <Link to={tool.link} title={tool.title} className='block'>
-             <div className={`mt-12 ${tool.icon ? "hidden" : "block"}`}/>
+          <div className={itemClasses} key={tool.title}>
+            {tool.new && <div className={badgeClasses}>New!</div>}
+
+            {/* Favorite Star Button */}
+            {onToggleFavorite && tool.icon && (
+              <button
+                onClick={() => onToggleFavorite(tool.id)}
+                title="Toggle Favorite"
+                className="absolute top-2 left-3 text-yellow-500 text-lg"
+              >
+                {tool.isFavorite ? (
+                  <img src="src/assets/startrue.svg" alt="star" className="w-6 h-6"/>
+                ) : (
+                  <img src="src/assets/starfalse.svg" alt="star" className="w-6 h-6"/>
+                )}
+              </button>
+            )}
+
+            <Link to={tool.link} title={tool.title} className="block">
+              <div className={`mt-9 ${tool.icon ? "hidden" : "block"}`} />
               <img
-                src={tool.icon }
+                src={tool.icon}
                 alt={tool.title}
                 className={`${iconClasses} ${tool.icon ? "block" : "hidden"}`}
               />
-              <h3 className={`${titleClasses}`}>{tool.title}</h3>
-              <div className={` ${contentClasses}`}>
+              <h3 className={titleClasses}>{tool.title}</h3>
+              <div className={contentClasses}>
                 <p>{tool.description}</p>
               </div>
             </Link>

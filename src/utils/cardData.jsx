@@ -1,5 +1,6 @@
 export const tools = [
   {
+    id: 1,
     title: "Merge PDF",
     description: "Combine multiple PDF files into a single document",
     icon: "src/assets/merge.svg",
@@ -7,6 +8,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 2,
     title: "Split PDF",
     description: "Divide a single PDF into multiple separate files",
     icon: "src/assets/split.svg",
@@ -14,6 +16,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 3,
     title: "Compress PDF",
     description: "Reduce the file size of your PDF documents.",
     icon: "src/assets/compress.svg",
@@ -21,6 +24,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 4,
     title: "PDF to Word",
     description: "Transform PDF file into editable word document",
     icon: "src/assets/pdftoword.svg",
@@ -28,6 +32,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 5,
     title: "PDF to Excel",
     description: "Transform PDF file into editable excel file",
     icon: "src/assets/pdftoexcel.svg",
@@ -35,6 +40,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 6,
     title: "PDF to Powerpoint",
     description: "Transform PDF file into editable PPT file",
     icon: "src/assets/pdftopowerpoint.svg",
@@ -42,6 +48,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 7,
     title: "Word to PDF",
     description: "Transform word document to PDF file",
     icon: "src/assets/wordtopdf.svg",
@@ -49,6 +56,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 8,
     title: "Powerpoint to PDF",
     description: "Transform PDF file into image",
     icon: "src/assets/powerpointtopdf.svg",
@@ -56,6 +64,7 @@ export const tools = [
     new: true,
   },
   {
+    id: 9,
     title: "Excel to PDF",
     description: "Transform PDF file into image",
     icon: "src/assets/exceltopdf.svg",
@@ -63,9 +72,10 @@ export const tools = [
     new: true,
   },
   {
+    id: 10,
     title: "More tools coming soon",
     description: "",
-    icon: "", // You can leave it empty or use a placeholder
+    icon: "", 
     link: "#",
     new: false,
   },

@@ -26,7 +26,7 @@ const ToolsCard = ({
                 className="absolute top-2 left-3 text-yellow-500 text-lg"
               >
                 {tool.isFavorite ? (
-                  <img src="src/assets/startrue.svg" alt="star" className="w-6 h-6"/>
+                  <img src="../assets/startrue.svg" alt="star" className="w-6 h-6"/>
                 ) : (
                   <img src="src/assets/starfalse.svg" alt="star" className="w-6 h-6"/>
                 )}

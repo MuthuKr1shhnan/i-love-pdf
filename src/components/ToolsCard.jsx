@@ -28,7 +28,7 @@ const ToolsCard = ({
                 {tool.isFavorite ? (
                   <img src="../assets/startrue.svg" alt="star" className="w-6 h-6"/>
                 ) : (
-                  <img src="src/assets/starfalse.svg" alt="star" className="w-6 h-6"/>
+                  <img src="../assets/starfalse.svg" alt="star" className="w-6 h-6"/>
                 )}
               </button>
             )}

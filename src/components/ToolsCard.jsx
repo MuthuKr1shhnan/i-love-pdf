@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Imageone from "../assets/startrue.svg";
+import img2 from "../assets/starfalse.svg";
 
 const ToolsCard = ({
   tools = [],
@@ -29,7 +30,7 @@ const ToolsCard = ({
                 {tool.isFavorite ? (
                   <img src={Imageone} alt="star" className="w-6 h-6"/>
                 ) : (
-                  <img src="src/assets/starfalse.svg" alt="star" className="w-6 h-6"/>
+                  <img src={img2} alt="star" className="w-6 h-6"/>
                 )}
               </button>
             )}
